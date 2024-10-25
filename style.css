@@ -1,0 +1,46 @@
+.flex-con {
+background-color: wheat;
+display: flex;
+justify-content: center;
+height: 400px;
+align-items: center;
+
+/* flex-wrap: wrap;
+flex-direction: row; */
+flex-flow: row-reverse nowrap;
+gap: 10px;
+}
+
+
+
+.item{
+   /*  width: 100px; */
+   
+ /*   display: flex; 
+   justify-content: center;
+   align-items: center; */
+   display: grid;
+   place-content:center;
+
+    height: 100px;
+    background: blue;
+    color: white;
+    
+    /* float: left; */
+
+    flex-grow: 1; 
+    flex-shrink: 1;
+   flex-basis: 100px;
+    /* short hand for the above three properties */
+   flex: 0 6 30%;
+
+    
+}
+.item:nth-child(3){
+    /* flex-grow: 4; */
+    flex-shrink: 5;
+ /*    order: 0; */
+ order: 1;
+ 
+ 
+}
